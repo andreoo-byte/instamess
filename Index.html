@@ -7,10 +7,15 @@
   <style>
     body {
       margin: 0;
-      padding: 20px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background-color: #f4f4f4;
       font-family: Arial, sans-serif;
       text-align: center;
+      position: relative;
     }
 
     h1 {
@@ -35,39 +40,41 @@
       border-radius: 10px;
       cursor: pointer;
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      margin-top: 20px;
     }
 
     button:hover {
       background-color: #45a049;
     }
 
-    .ad-space {
-      margin: 20px auto;
+    .ad-top {
+      position: absolute;
+      top: 10px;
+    }
+
+    .ad-left {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .ad-right {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .ad-bottom {
+      position: absolute;
+      bottom: 10px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Redirecting...</h1>
-  <p>In order to get the vie faucet points, <a href="https://instameads.netlify.app">click here</a>.</p>
-
-  <!-- Ad 1 (300x250) -->
-  <div class="ad-space">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'f53e1f04ab8158ab91064ebbd0b54fae',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//decomposemanly.com/f53e1f04ab8158ab91064ebbd0b54fae/invoke.js"></script>
-  </div>
-
-  <!-- Ad 2 (728x90) -->
-  <div class="ad-space">
+  <!-- Ad 2: Top banner (728x90) -->
+  <div class="ad-top">
     <script type="text/javascript">
       atOptions = {
         'key' : 'cc021a2768a7f4c8bbbe254c15bff0d3',
@@ -80,8 +87,8 @@
     <script type="text/javascript" src="//decomposemanly.com/cc021a2768a7f4c8bbbe254c15bff0d3/invoke.js"></script>
   </div>
 
-  <!-- Ad 3 (160x600) -->
-  <div class="ad-space">
+  <!-- Ad 3: Left side (160x600) -->
+  <div class="ad-left">
     <script type="text/javascript">
       atOptions = {
         'key' : 'a653ef7c928f0c6171c4d35145f08cc5',
@@ -94,11 +101,27 @@
     <script type="text/javascript" src="//decomposemanly.com/a653ef7c928f0c6171c4d35145f08cc5/invoke.js"></script>
   </div>
 
-  <!-- Main Button -->
+  <!-- Ad 1: Right side (300x250) -->
+  <div class="ad-right">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : 'f53e1f04ab8158ab91064ebbd0b54fae',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//decomposemanly.com/f53e1f04ab8158ab91064ebbd0b54fae/invoke.js"></script>
+  </div>
+
+  <!-- Main Content -->
+  <h1>Redirecting...</h1>
+  <p>In order to get the vie faucet points, <a href="https://instameads.netlify.app">click here</a>.</p>
   <button>CLICK ME TO COMPLETE CAPTCHA TO GET REWARDED</button>
 
-  <!-- Ad 4 (script) -->
-  <div class="ad-space">
+  <!-- Ad 4: Bottom script -->
+  <div class="ad-bottom">
     <script type='text/javascript' src='//decomposemanly.com/11/33/3b/11333b0cfc4c13aaad6057fbc12b953e.js'></script>
   </div>
 
